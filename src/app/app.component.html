@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+<section *ngFor="let section of mock.section; let s = index;">
+  <div class="block d-flex justify-content-start align-content-stretch flex-wrap" *ngFor="let block of section.block; let b = index;" [ngClass]="block.orientation">
+    <div class="content" *ngFor="let content of block.content; let c = index;" [ngStyle]="buildStyles(content)">
+      // *ngSwitch {{c}}
+    </div>
+  </div>
+</section>

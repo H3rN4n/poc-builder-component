@@ -1,0 +1,9 @@
+.block {
+  height: 400px;
+  max-height: 800px;
+}
+
+.block .content {
+  border: 1px solid white;
+  background: #666;
+}
